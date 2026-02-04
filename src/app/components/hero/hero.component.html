@@ -1,4 +1,4 @@
-<section id="home" class="relative h-screen overflow-hidden pt-16">
+<section id="home" class="relative min-h-screen overflow-hidden pt-20 md:pt-16">
   <!-- Background Image with Overlay -->
   <div class="absolute inset-0">
     <img
@@ -6,98 +6,101 @@
       alt="Luxury Hotel Lobby"
       class="w-full h-full object-cover"
     />
-    <div class="absolute inset-0 bg-black/40"></div>
+    <!-- Gradient optimisé pour meilleure lisibilité -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
   </div>
 
   <!-- Content -->
-  <div class="container mx-auto px-6 h-full flex items-center relative z-10">
-    <div class="max-w-2xl text-white animate-fadeInUp py-6">
-      <h1 class="font-heading text-3xl md:text-6xl  font-bold mb-6 leading-tight">
-        {{ 'hero.title' | transloco }}
-      </h1>
-      <h1 class="md:text-xl font-bold mb-6 leading-tight">
-        {{ 'hero.subtitle_level_0' | transloco }}
-      </h1>
-      <p class="text-xl mb-10 text-gray-200">
-        {{ 'hero.subtitle' | transloco }}
-      </p>
-
-      <!-- Booking Form -->
-      <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-white/20">
-        <h2 class="text-2xl font-bold mb-6">{{ 'hotel.slogan' | transloco }}</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-  <!-- Arrival Date -->
-  <div>
-    <label class="block text-white text-sm mb-2 font-medium">
-      {{ 'hero.arrival' | transloco }}
-    </label>
-    <div class="relative">
-      <input
-        type="date"
-        [(ngModel)]="arrivalDate"
-        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF7F00] focus:border-transparent backdrop-blur-sm date-input"
-        #arrivalInput
-      />
-      <!-- Supprimer l'icône SVG manuelle -->
-    </div>
-  </div>
-
-  <!-- Departure Date -->
-  <div>
-    <label class="block text-white text-sm mb-2 font-medium">
-      {{ 'hero.departure' | transloco }}
-    </label>
-    <div class="relative">
-      <input
-        type="date"
-        [(ngModel)]="departureDate"
-        [min]="arrivalDate"
-        class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF7F00] focus:border-transparent backdrop-blur-sm date-input"
-        #departureInput
-      />
-      <!-- Supprimer l'icône SVG manuelle -->
-    </div>
-  </div>
-
-  <!-- Guests -->
-  <div>
-    <label class="block text-white text-sm mb-2 font-medium">
-      {{ 'hero.guests' | transloco }}
-    </label>
-    <div class="flex items-center">
-      <button
-        (click)="decreaseGuests()"
-        type="button"
-        class="w-12 h-12 flex items-center justify-center bg-white/10 border border-white/20 rounded-l-xl text-white hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-[#FF7F00]"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
-        </svg>
-      </button>
-
-      <div class="w-full h-12 flex items-center justify-center bg-white/10 border-y border-white/20">
-        <span class="text-white text-lg font-medium">{{ guests }}</span>
+  <div class="container mx-auto px-4 md:px-6 min-h-screen flex items-center relative z-10 py-8 md:py-0">
+    <div class="max-w-2xl text-white animate-fadeInUp w-full">
+      <!-- Titres avec meilleur contraste -->
+      <div class="mb-8 md:mb-10 bg-transparent  p-4 md:p-6 rounded-2xl">
+        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg">
+          {{ 'hero.title' | transloco }}
+        </h1>
+        <h2 class="text-lg md:text-xl font-bold mb-3 md:mb-4 leading-tight drop-shadow-lg">
+          {{ 'hero.subtitle_level_0' | transloco }}
+        </h2>
+        <p class="text-base md:text-xl text-gray-100 drop-shadow-md">
+          {{ 'hero.subtitle' | transloco }}
+        </p>
       </div>
 
-      <button
-        (click)="increaseGuests()"
-        type="button"
-        class="w-12 h-12 flex items-center justify-center bg-white/10 border border-white/20 rounded-r-xl text-white hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-[#FF7F00]"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-        </svg>
-      </button>
-    </div>
-    <p class="text-white/70 text-xs mt-2">{{ 'hero.maxGuests' | transloco }}</p>
-  </div>
-</div>
+      <!-- Booking Form - Optimisé pour mobile -->
+      <div class="bg-white/15 backdrop-blur-md rounded-2xl p-4 md:p-8 border border-white/30 shadow-2xl">
+        <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">{{ 'hotel.slogan' | transloco }}</h2>
 
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mb-4">
+          <!-- Arrival Date -->
+          <div>
+            <label class="block text-white text-sm mb-2 font-medium drop-shadow-md">
+              {{ 'hero.arrival' | transloco }}
+            </label>
+            <div class="relative">
+              <input
+                type="date"
+                [(ngModel)]="arrivalDate"
+                class="w-full px-3 md:px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF7F00] focus:border-transparent backdrop-blur-sm date-input"
+                #arrivalInput
+              />
+            </div>
+          </div>
+
+          <!-- Departure Date -->
+          <div>
+            <label class="block text-white text-sm mb-2 font-medium drop-shadow-md">
+              {{ 'hero.departure' | transloco }}
+            </label>
+            <div class="relative">
+              <input
+                type="date"
+                [(ngModel)]="departureDate"
+                [min]="arrivalDate"
+                class="w-full px-3 md:px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF7F00] focus:border-transparent backdrop-blur-sm date-input"
+                #departureInput
+              />
+            </div>
+          </div>
+
+          <!-- Guests -->
+          <div>
+            <label class="block text-white text-sm mb-2 font-medium drop-shadow-md">
+              {{ 'hero.guests' | transloco }}
+            </label>
+            <div class="flex items-center">
+              <button
+                (click)="decreaseGuests()"
+                type="button"
+                class="w-12 h-12 flex items-center justify-center bg-white/10 border border-white/20 rounded-l-xl text-white hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-[#FF7F00]"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
+                </svg>
+              </button>
+
+              <div class="flex-1 h-12 flex items-center justify-center bg-white/10 border-y border-white/20">
+                <span class="text-white text-lg font-medium">{{ guests }}</span>
+              </div>
+
+              <button
+                (click)="increaseGuests()"
+                type="button"
+                class="w-12 h-12 flex items-center justify-center bg-white/10 border border-white/20 rounded-r-xl text-white hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-[#FF7F00]"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                </svg>
+              </button>
+            </div>
+            <p class="text-white/80 text-xs mt-2 drop-shadow-md">{{ 'hero.maxGuests' | transloco }}</p>
+          </div>
+        </div>
+
+        <!-- Bouton de réservation - TOUJOURS VISIBLE -->
         <button
           (click)="checkAvailability()"
           [disabled]="isLoading"
-          class="w-full bg-[#FF7F00] text-white py-4 rounded-xl font-bold hover:bg-[#E57200] transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
+          class="w-full bg-[#FF7F00] text-white py-3 md:py-4 rounded-xl font-bold hover:bg-[#E57200] transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center shadow-lg text-base md:text-lg"
         >
           <span *ngIf="!isLoading">{{ 'hero.checkAvailability' | transloco }}</span>
           <span *ngIf="isLoading" class="loader"></span>
