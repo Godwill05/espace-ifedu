@@ -21,7 +21,8 @@
   },
   "hero": {
     "title": "Welcome to ESPACE IFEDU",
-    "subtitle": "Comfortable accommodation and friendly dining in Porto-Novo, Benin",
+    "subtitle_level_0": "Espace IFEDU Hotel & Event Venue in Porto-Novo",
+    "subtitle": "Espace IFEDU is a premier hotel in Porto-Novo offering comfortable rooms and elegant reception halls for weddings and conferences.",
     "arrival": "Arrival Date",
     "departure": "Departure Date",
     "guests": "Number of Guests",
