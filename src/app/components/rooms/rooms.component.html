@@ -1,0 +1,160 @@
+<section id="rooms" class="py-20 bg-[#F8F8F8] relative overflow-hidden">
+  <!-- Animations de fond -->
+  <div  *ngIf="hasValentinRoom" class="absolute inset-0 overflow-hidden pointer-events-none">
+    <!-- Cœurs pour Saint-Valentin -->
+    <div *ngFor="let heart of valentinHearts"
+         class="absolute valentin-heart"
+         [style.left.%]="heart.left"
+         [style.width.px]="heart.size"
+         [style.height.px]="heart.size"
+         [style.animationDelay.s]="heart.delay"
+         [style.opacity]="heart.opacity">
+      ❤️
+    </div>
+  </div>
+
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <!-- Étoiles pour effet prestige -->
+    <div *ngFor="let star of prestigeStars"
+         class="absolute prestige-star"
+         [style.left.%]="star.left"
+         [style.top.%]="star.top"
+         [style.width.px]="star.size"
+         [style.height.px]="star.size"
+         [style.animationDelay.s]="star.delay"
+         [style.animationDuration.s]="star.duration">
+      ✨
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16 animate-fadeInUp">
+      <h2 class="font-heading text-4xl md:text-5xl font-bold text-red-900 mb-4">
+        {{ 'rooms.title' | transloco }}
+      </h2>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+        {{ 'rooms.subtitle' | transloco }}
+      </p>
+    </div>
+
+    <!-- Gallery Preview -->
+    <div class="max-w-4xl mx-auto mb-12">
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+        <div class="p-6 border-b border-gray-100">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">{{ 'rooms.gallery' | transloco }}</h3>
+          <div class="flex space-x-4 overflow-x-auto pb-4">
+            <button *ngFor="let room of roomTypes; let i = index"
+                    (click)="setActiveGallery(i)"
+                    [class.bg-[#FF7F00]]="activeRoomIndex === i"
+                    [class.text-white]="activeRoomIndex === i"
+                    [class.text-gray-700]="activeRoomIndex !== i"
+                    class="flex-shrink-0 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-[#FF7F00] hover:text-white">
+              {{ room.nameKey | transloco }}
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="grid grid-cols-3 gap-4">
+            <div *ngFor="let img of activeGallery; let i = index"
+                 class="relative rounded-xl overflow-hidden h-40">
+              <img [src]="img"
+                   [alt]="'rooms.galleryImage' | transloco: { index: i + 1 }"
+                   class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rooms Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div *ngFor="let room of roomTypes"
+           [class.valentin-room]="room.isValentin"
+           [class.prestige-room]="!room.isValentin"
+           class="relative bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+
+        <!-- Badge spécial -->
+        <div *ngIf="room.isValentin"
+             class="absolute top-4 left-4 z-20 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse">
+           {{ 'rooms.valentinSpecial' | transloco }}
+        </div>
+
+        <div *ngIf="room.type === 'presidentielle'"
+             class="absolute top-4 left-4 z-20 bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+           {{ 'rooms.presidential' | transloco }}
+        </div>
+
+        <!-- Image principale -->
+        <div class="relative h-64">
+          <img [src]="room.image"
+               [alt]="room.nameKey | transloco"
+               class="w-full h-full object-cover">
+
+          <!-- Prix -->
+          <div *ngIf="room.type !==  'studio' " class="absolute top-4 right-4 bg-[#FF7F00] text-white px-4 py-2 rounded-full font-bold">
+            {{ 'rooms.from' | transloco }}
+            <div class="flex items-center">
+              <span class="text-lg">€{{room.price}}</span>
+              <span class="text-xs mx-1">•</span>
+              <span class="text-sm">{{room.priceCFA.toLocaleString()}} FCFA</span>
+              <!-- <span class="ml-1 text-xs">💰</span> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenu -->
+        <div class="p-6">
+          <h3 class="font-heading text-2xl font-bold text-gray-900 mb-3">
+            {{ room.nameKey | transloco }}
+          </h3>
+
+          <p class="text-gray-600 mb-6">
+            {{ room.descriptionKey | transloco }}
+          </p>
+
+          <!-- Features -->
+          <div class="grid grid-cols-2 gap-3 mb-8">
+            <div *ngFor="let feature of [0,1,2,3,4,5,6,7]" class="flex items-center"
+                 [class.hidden]="feature >= room.featuresCount">
+              <div class="w-6 h-6 flex items-center justify-center bg-[#FF7F00]/10 rounded-lg mr-3">
+                <svg class="w-4 h-4 text-[#FF7F00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <span class="text-gray-700 text-sm">{{ 'rooms.' + room.type + '.features' + feature | transloco }}</span>
+            </div>
+          </div>
+
+          <!-- Bouton avec icone -->
+          <button (click)="bookRoom(room)"
+                  class="w-full bg-[#FF7F00] text-white py-4 rounded-xl font-bold hover:bg-[#E57200] transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center group">
+            <svg class="w-5 h-5 mr-3 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+            </svg>
+            {{ 'rooms.bookNow' | transloco }}
+            <svg class="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Note sur les prix -->
+    <!-- <div class="mt-12 text-center">
+      <div class="inline-flex items-center bg-white rounded-2xl px-6 py-3 shadow-lg">
+        <div class="w-8 h-8 flex items-center justify-center bg-[#FF7F00]/10 rounded-full mr-3">
+          <span class="text-[#FF7F00] font-bold">💱</span>
+        </div>
+        <div class="text-left">
+          <p class="text-gray-700 text-sm">
+            {{ 'rooms.currencyNote' | transloco }}
+            <span class="font-bold">1€ ≈ 655 FCFA</span>
+          </p>
+          <p class="text-gray-500 text-xs">{{ 'rooms.taxesIncluded' | transloco }}</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>

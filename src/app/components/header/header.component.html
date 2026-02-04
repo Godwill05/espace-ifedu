@@ -1,0 +1,100 @@
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 backdrop-blur-md bg-white/90">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-[#FF7F00] rounded-full flex items-center justify-center">
+          <span class="text-white font-bold text-xl">EI</span>
+        </div>
+        <div>
+          <h1 class="font-pacifico text-2xl font-bold text-gray-900">{{ 'hotel.name' | transloco }} </h1>
+          <p class="text-sm text-gray-600">{{ 'hotel.tagline' | transloco }}</p>
+        </div>
+      </div>
+
+      <!-- Navigation Desktop -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium">
+          {{ 'navigation.home' | transloco }}
+        </a>
+        <a href="#rooms" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium">
+          {{ 'navigation.rooms' | transloco }}
+        </a>
+        <a href="#restaurant" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium">
+          {{ 'navigation.restaurant' | transloco }}
+        </a>
+        <a href="#founders" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium">
+          {{ 'navigation.founders' | transloco }}
+        </a>
+        <a href="#location" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium">
+          {{ 'navigation.location' | transloco }}
+        </a>
+        <a href="#contact" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium">
+          {{ 'navigation.contact' | transloco }}
+        </a>
+
+        <!-- Sélecteur de langue -->
+        <div class="relative">
+          <select
+            [(ngModel)]="currentLang"
+            (change)="changeLanguage()"
+            class="appearance-none bg-transparent border border-gray-300 rounded-lg px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-[#FF7F00] focus:border-transparent cursor-pointer"
+          >
+            <option *ngFor="let lang of availableLangs" [value]="lang.id">
+              {{ lang.flag }} {{ lang.label }}
+            </option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Menu mobile -->
+      <button class="md:hidden text-gray-700" (click)="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path [attr.d]="isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div *ngIf="isMenuOpen" class="md:hidden mt-4 pb-4 animate-fadeInUp">
+      <div class="flex flex-col space-y-2">
+        <a href="#home" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium py-2" (click)="toggleMenu()">
+          {{ 'navigation.home' | transloco }}
+        </a>
+        <a href="#rooms" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium py-2" (click)="toggleMenu()">
+          {{ 'navigation.rooms' | transloco }}
+        </a>
+        <a href="#restaurant" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium py-2" (click)="toggleMenu()">
+          {{ 'navigation.restaurant' | transloco }}
+        </a>
+        <a href="#founders" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium py-2" (click)="toggleMenu()">
+          {{ 'navigation.founders' | transloco }}
+        </a>
+        <a href="#location" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium py-2" (click)="toggleMenu()">
+          {{ 'navigation.location' | transloco }}
+        </a>
+        <a href="#contact" class="text-gray-700 hover:text-[#FF7F00] transition-colors duration-300 font-medium py-2" (click)="toggleMenu()">
+          {{ 'navigation.contact' | transloco }}
+        </a>
+
+        <div class="pt-4 border-t border-gray-200">
+          <select
+            [(ngModel)]="currentLang"
+            (change)="changeLanguage()"
+            class="w-full appearance-none bg-transparent border border-gray-300 rounded-lg px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-[#FF7F00] focus:border-transparent cursor-pointer"
+          >
+            <option *ngFor="let lang of availableLangs" [value]="lang.id">
+              {{ lang.flag }} {{ lang.label }}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

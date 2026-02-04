@@ -1,0 +1,1 @@
+export const WHATSAPP_PHONE8NUMBER: string = "22962690260";

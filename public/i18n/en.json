@@ -1,0 +1,305 @@
+{
+  "common": {
+    "close": "Close",
+    "view": "View",
+    "download": "Download",
+    "hours": "Hours",
+    "contact": "Contact"
+  },
+  "hotel": {
+    "name": "ESPACE IFEDU",
+    "tagline": "Luxury Hotel & Fine Dining",
+    "slogan": "Where Elegance Meets Comfort"
+  },
+  "navigation": {
+    "home": "Home",
+    "rooms": "Rooms & Suites",
+    "restaurant": "Restaurant",
+    "founders": "Our Founders",
+    "location": "Location",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to ESPACE IFEDU",
+    "subtitle": "Comfortable accommodation and friendly dining in Porto-Novo, Benin",
+    "arrival": "Arrival Date",
+    "departure": "Departure Date",
+    "guests": "Number of Guests",
+    "checkAvailability": "Check Availability",
+    "maxGuests": "Maximum 3 guests per room"
+  },
+  "rooms": {
+    "title": "Rooms & Suites",
+    "subtitle": "Elegant accommodations designed for your comfort",
+    "gallery": "Photo Gallery",
+    "galleryImage": "Image {{index}}",
+    "from": "from",
+    "bookNow": "Book Now",
+    "valentinSpecial": "Valentine's Special",
+    "presidential": "Presidential",
+    "currencyNote": "Prices in euros and CFA francs - ",
+    "taxesIncluded": "All taxes included",
+
+    "studio": {
+      "title": "Deluxe Studio",
+      "description": "Perfect for solo travelers or couples, featuring a queen bed and modern amenities",
+      "features0": "25 m²",
+      "features1": "Queen bed",
+      "features2": "Free WiFi",
+      "features3": "4K Smart TV",
+      "features4": "Mini fridge",
+      "features5": "Private bathroom"
+    },
+
+    "suite": {
+      "title": "Executive Suite",
+      "description": "Spacious suite with separate living area, ideal for longer stays",
+      "features0": "45 m²",
+      "features1": "King size bed",
+      "features2": "Separate living room",
+      "features3": "Private balcony",
+      "features4": "Mini-bar",
+      "features5": "Bathroom with jacuzzi",
+      "features6": "Work desk",
+      "features7": "24/7 room service"
+    },
+
+    "presidentielle": {
+      "title": "Presidential Suite",
+      "description": "Our most luxurious suite with exclusive amenities and panoramic views",
+      "features0": "85 m²",
+      "features1": "Premium king size bed",
+      "features2": "Large living room",
+      "features3": "Panoramic terrace",
+      "features4": "Fully equipped kitchen",
+      "features5": "Butler service"
+    }
+  },
+  "restaurant": {
+    "title": "Restaurant",
+    "subtitle": "Gourmet cuisine with a modern twist",
+    "description": "Our award-winning restaurant offers seasonal dishes prepared by our Michelin-starred chef. Experience the finest French gastronomy in an elegant setting.",
+    "menu": "View Menu",
+    "reservation": "Make Reservation",
+    "menuTitle": "Our Menu",
+    "downloadMenu": "Download",
+    "hours": {
+      "title": "Opening Hours",
+      "breakfast": "Breakfast: 7:00 - 10:30",
+      "lunch": "Lunch: 12:00 - 14:30",
+      "dinner": "Dinner: 19:00 - 22:30"
+    }
+  },
+  "founders": {
+    "title": "Our Founders",
+    "subtitle": "The vision behind ESPACE IFEDU",
+    "founder1": {
+      "name": "Sophie Laurent",
+      "role": "Founder & CEO",
+      "bio": " "
+    },
+    "founder2": {
+      "name": "Jean-Pierre Martin",
+      "role": "Co-Founder & Executive Chef",
+      "bio": " "
+    },
+    "message": "We created Espace Ifèdu with a simple vision: to offer every guest a warm, peaceful, and welcoming place where one truly feels at home.\n\nYour trust is our greatest motivation. Every day, we remain committed to improving our services, listening to your needs, and upholding the values of quality, respect, and hospitality that define our establishment.\n\nThank you for being part of the Espace Ifèdu journey. We look forward to welcoming you and making your stay as pleasant as possible.",
+    "signature": "The founders – Espace Ifèdu",
+    "quote": "Our commitment: delivering a genuine experience where every detail matters."
+  },
+  "location": {
+    "title": "Our Location",
+    "subtitle": "In the heart of Porto-Novo, Benin",
+    "address": "Tokpota-Davo, Porto-Novo, Benin",
+    "directions": "Get Directions",
+    "description": "Located in Porto-Novo, ESPACE IFEDU offers convenient access to local attractions, restaurants, and main roads."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "ESPACE IFEDU offers accommodation and dining services in Porto-Novo, Benin, ideal for stays, events, and social gatherings.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings",
+    "rights": "All rights reserved"
+  },
+  "cookie": {
+    "title": "Cookie Preferences",
+    "message": "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
+    "accept": "Accept All",
+    "reject": "Reject Non-Essential",
+    "settings": "Cookie Settings"
+  },
+  "testimonials": {
+    "title": "They Trusted Us",
+    "subtitle": "Discover the experiences of our satisfied customers",
+    "averageRating": "Average rating",
+    "clientsServed": "Clients served",
+    "satisfactionRate": "Satisfaction rate",
+    "countries": "Countries represented",
+    "trustCTA": "Join our community of happy travelers",
+    "joinCommunity": "Share your ESPACE IFEDU experience",
+    "shareExperience": "Share my review"
+  },
+  "events": {
+    "title": "EVENT SPACE",
+    "subtitle": "Transform your special moments into unforgettable memories in our dedicated spaces",
+    "typesTitle": "Event Types",
+    "weddings": "Weddings",
+    "weddingsDescription": "Celebrate your union in a romantic and elegant setting with our dedicated team",
+    "conferences": "Conferences",
+    "conferencesDescription": "Professional equipment for your business meetings and important presentations",
+    "galas": "Galas",
+    "galasDescription": "Exceptional evenings in a luxurious environment for your prestigious events",
+    "seminars": "Seminars",
+    "seminarsDescription": "Modular spaces adapted to your training sessions and professional workshops",
+    "capacity": "Capacity",
+    "people": "people",
+    "requestQuote": "Request Quote",
+
+    "dedicatedSpace": {
+      "title": "A Space Dedicated to Your Events",
+      "description": "Our modular event rooms adapt to all your desires. Whether for an intimate wedding, a professional conference or a prestigious gala, we provide equipped spaces and a dedicated team to make your event a success.",
+      "benefit1": "High-end technical equipment",
+      "benefit2": "Custom catering service",
+      "benefit3": "Professional event coordination",
+      "eventsHosted": "Events hosted",
+
+      "image_survole": "Hover over the image to explore details of our event space",
+      "terrase": "Garden-view terrace",
+      "interrior": "Private outdoor space",
+      "principale": "Main stage",
+      "equipment": "Professional audio and video equipment",
+      "reception": "Reception area",
+      "traiteur": "Catering service and premium bar",
+      "zoom": "Interactive zoom",
+      "mollete": "Mouse wheel = zoom"
+    },
+
+    "equipmentTitle": "Equipment & Services",
+    "equipmentSubtitle": "Everything needed for a successful event",
+    "equipment": {
+      "audioVideo": "Professional AV",
+      "audioVideoDesc": "High-quality sound and video systems",
+      "lighting": "Stage Lighting",
+      "lightingDesc": "LED lighting and special effects",
+      "furniture": "Elegant Furniture",
+      "furnitureDesc": "Design chairs, tables and platforms",
+      "wifi": "High-Speed WiFi",
+      "wifiDesc": "Guaranteed fiber optic connection",
+      "decoration": "Custom Decoration",
+      "decorationDesc": "Personalized decoration service",
+      "catering": "Catering Service",
+      "cateringDesc": "Gastronomic cuisine and cocktails"
+    },
+    "available": "Available",
+
+    "ctaTitle": "Plan Your Dream Event",
+    "ctaDescription": "Our team of experts is available to create a custom event that exactly matches your vision and budget.",
+    "contactNow": "Contact Us",
+    "customQuote": "Custom Quote",
+    "securityNote": "Secure and flexible booking - Free cancellation up to 30 days before",
+
+    "modalTitle": "Contact us for your event",
+    "modalSubtitle": "Personalize your message before contacting us via WhatsApp",
+    "messageLabel": "Your personalized message",
+    "messagePlaceholder": "Write your message here...",
+    "resetMessage": "Default message",
+    "tipTitle": "Tip",
+    "tipContent": "Customize your message with your specific information (date, number of participants, event type) for a faster response.",
+    "sendWhatsApp": "Send via WhatsApp",
+    "cancel": "Cancel"
+  },
+  "services": {
+    "hotelAccommodation": "Hotel Accommodation",
+    "restaurantBar": "Restaurant & Bar",
+    "eventReception": "Event Reception",
+    "decorAndPlanning": "Wedding & Event Decoration",
+    "guestHouse": "Guest House Lodging",
+    "technicalMusicSupport": "Technical & Music Support",
+    "partyEntertainment": "Party & Entertainment Area"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This privacy policy explains how ESPACE IFEDU collects, uses, and protects the personal data of visitors to its website.",
+
+    "section1": {
+      "title": "1. Data Controller",
+      "content": "The ESPACE IFEDU website is operated by the ESPACE IFEDU hotel establishment, located in Porto-Novo, Benin. For any questions, you may contact us using the details provided on the website."
+    },
+
+    "section2": {
+      "title": "2. Data Collected",
+      "content": "We only collect data that is strictly necessary, such as information provided through the contact form (name, email address, message), as well as technical data like IP address or browser type."
+    },
+
+    "section3": {
+      "title": "3. Use of Data",
+      "content": "Collected data is used solely to respond to contact requests, improve user experience, and ensure proper website operation."
+    },
+
+    "section4": {
+      "title": "4. Cookies",
+      "content": "The website may use technical cookies required for its operation and, where applicable, audience measurement cookies. You can manage your preferences through cookie settings."
+    },
+
+    "section5": {
+      "title": "5. Data Retention",
+      "content": "Personal data is retained only for as long as necessary to fulfill the purposes for which it was collected."
+    },
+
+    "section6": {
+      "title": "6. User Rights",
+      "content": "In accordance with applicable regulations, you have the right to access, correct, and delete your personal data. Requests can be made using the website’s contact details."
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "intro": "These terms of use govern access to and use of the ESPACE IFEDU website.",
+
+    "section1": {
+      "title": "1. Website purpose",
+      "content": "The ESPACE IFEDU website is a showcase website intended to present the hotel’s services, including accommodation, restaurant services, and event spaces."
+    },
+
+    "section2": {
+      "title": "2. Reservations",
+      "content": "No reservations or payments are made directly on the website. Reservation requests are handled exclusively via WhatsApp or direct contact with the establishment."
+    },
+
+    "section3": {
+      "title": "3. Liability",
+      "content": "ESPACE IFEDU strives to provide accurate and up-to-date information. However, it cannot be held liable for errors, omissions, or temporary unavailability of the website."
+    },
+
+    "section4": {
+      "title": "4. Intellectual property",
+      "content": "All content on the website (texts, images, logos) is protected by intellectual property laws. Any unauthorized use or reproduction is prohibited."
+    },
+
+    "section5": {
+      "title": "5. Cookies and third-party services",
+      "content": "The website may use technical cookies and third-party services, including interactive maps (e.g. Google Maps). These cookies are necessary for certain features to function properly."
+    },
+
+    "section6": {
+      "title": "6. Applicable law",
+      "content": "These terms are governed by the laws in force in the Republic of Benin. In the event of a dispute, an amicable solution will be sought before any legal action."
+    }
+  }
+}

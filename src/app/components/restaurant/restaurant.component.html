@@ -1,0 +1,121 @@
+<section id="restaurant" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Content -->
+      <div class="animate-fadeInUp">
+        <h2 class="font-heading text-4xl md:text-5xl font-bold text-red-900 mb-4">
+          {{ 'restaurant.title' | transloco }}
+        </h2>
+
+        <p class="text-gray-600 text-lg mb-8">
+          {{ 'restaurant.subtitle' | transloco }}
+        </p>
+
+        <p class="text-gray-700 mb-10 leading-relaxed">
+          {{ 'restaurant.description' | transloco }}
+        </p>
+
+        <!-- Opening Hours -->
+        <div class="bg-[#F8F8F8] rounded-2xl p-6 mb-8">
+          <h3 class="font-bold text-xl text-gray-900 mb-4">
+            {{ 'restaurant.hours.title' | transloco }}
+          </h3>
+          <div class="space-y-3">
+            <div class="flex items-center">
+              <div class="w-2 h-2 bg-[#FF7F00] rounded-full mr-3"></div>
+              <span class="text-gray-700">{{ 'restaurant.hours.breakfast' | transloco }}</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 bg-[#FF7F00] rounded-full mr-3"></div>
+              <span class="text-gray-700">{{ 'restaurant.hours.lunch' | transloco }}</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-2 h-2 bg-[#FF7F00] rounded-full mr-3"></div>
+              <span class="text-gray-700">{{ 'restaurant.hours.dinner' | transloco }}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button (click)="openMenuModal()"
+            class="bg-[#FF7F00] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#E57200] transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[#FF7F00] focus:ring-offset-2">
+            {{ 'restaurant.menu' | transloco }}
+          </button>
+          <button (click)="reserveTable(1)"
+            class="bg-white text-[#FF7F00] border-2 border-[#FF7F00] px-8 py-4 rounded-xl font-bold hover:bg-[#FF7F00] hover:text-white transition-all duration-300 transform hover:scale-[1.02]">
+            {{ 'restaurant.reservation' | transloco }}
+          </button>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="relative">
+        <div class="relative rounded-3xl overflow-hidden h-96 lg:h-[500px]">
+          <img
+            src="486350672_1182687413863921_3586128345010893279_n.jpg"
+            alt="Restaurant Interior" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Decorative Element -->
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#FF7F00] rounded-2xl -z-10"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal pour afficher l'image du menu -->
+<div *ngIf="isMenuModalOpen"
+  class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+  (click)="closeMenuModal()">
+  <div class="relative max-w-4xl w-full max-h-[90vh]" (click)="$event.stopPropagation()">
+    <!-- Bouton de fermeture -->
+    <button (click)="closeMenuModal()"
+      class="absolute -top-12 right-0 text-white hover:text-[#FF7F00] transition-colors z-10" aria-label="Fermer">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Contenu du modal -->
+    <div class="bg-white rounded-2xl overflow-hidden shadow-2xl">
+      <!-- Header du modal -->
+      <div class="bg-[#FF7F00] text-white p-4">
+        <h3 class="text-xl font-bold text-center">{{ 'restaurant.menuTitle' | transloco }}</h3>
+      </div>
+
+      <!-- Image du menu -->
+      <div class="overflow-auto max-h-[70vh]">
+        <img
+          src="IMG_4340.jpg"
+          alt="Menu du restaurant" class="w-full h-auto object-contain" (load)="onImageLoad()"
+          [class.hidden]="!isImageLoaded" />
+
+        <!-- Chargement de l'image -->
+        <div *ngIf="!isImageLoaded" class="flex items-center justify-center p-12">
+          <div class="loader"></div>
+        </div>
+      </div>
+
+      <!-- Footer du modal -->
+      <div class="bg-gray-50 p-4 border-t">
+        <div class="flex justify-between items-center">
+          <button (click)="closeMenuModal()"
+            class="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+            {{ 'common.close' | transloco }}
+          </button>
+          <button (click)="downloadMenu()"
+            class="px-6 py-2 bg-[#FF7F00] text-white rounded-lg hover:bg-[#E57200] transition-colors flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            {{ 'restaurant.downloadMenu' | transloco }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

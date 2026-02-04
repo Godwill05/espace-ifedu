@@ -1,0 +1,306 @@
+{
+  "common": {
+    "close": "Fermer",
+    "view": "Voir",
+    "download": "Télécharger",
+    "hours": "Heures",
+    "contact": "Contact"
+  },
+  "hotel": {
+    "name": "ESPACE IFEDU",
+    "tagline": "Hôtel de Luxe & Restaurant",
+    "slogan": "Où l'Élégance Rencontre le Confort"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "rooms": "Studios & Suites",
+    "restaurant": "Restaurant",
+    "founders": "Nos Fondateurs",
+    "location": "Localisation",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bienvenue à l'ESPACE IFEDU",
+    "subtitle": "Un lieu d'hébergement confortable et de restauration conviviale à Porto-Novo, Bénin",
+    "arrival": "Date d'arrivée",
+    "departure": "Date de départ",
+    "guests": "Nombre de personnes",
+    "checkAvailability": "Vérifier la disponibilité",
+    "maxGuests": "Maximum 3 personnes par chambre"
+  },
+  "rooms": {
+    "title": "Studios & Suites",
+    "subtitle": "Des hébergements élégants conçus pour votre confort",
+    "gallery": "Galerie Photos",
+    "galleryImage": "Image {{index}}",
+    "from": "à partir de",
+    "bookNow": "Réserver maintenant",
+    "valentinSpecial": "Offre Saint-Valentin",
+    "presidential": "Présidentielle",
+    "currencyNote": "Prix en euros et francs CFA - ",
+    "taxesIncluded": "Toutes taxes comprises",
+
+    "studio": {
+      "title": "Studio Deluxe",
+      "description": "Parfait pour les voyageurs solos ou les couples, avec un lit queen et des équipements modernes",
+      "features0": "25 m²",
+      "features1": "Lit queen",
+      "features2": "WiFi gratuit",
+      "features3": "Smart TV 4K",
+      "features4": "Mini-frigo",
+      "features5": "Salle de bain privée"
+    },
+
+    "suite": {
+      "title": "Suite Exécutive",
+      "description": "Suite spacieuse avec espace de vie séparé, idéale pour les séjours prolongés",
+      "features0": "45 m²",
+      "features1": "Lit king size",
+      "features2": "Salon séparé",
+      "features3": "Balcon privé",
+      "features4": "Mini-bar",
+      "features5": "Salle de bain",
+      "features6": "Bureau de travail",
+      "features7": "Service en chambre 24h/24"
+    },
+
+    "presidentielle": {
+      "title": "Suite Présidentielle",
+      "description": "Notre suite la plus luxueuse avec des prestations exclusives et une vue panoramique",
+      "features0": "85 m²",
+      "features1": "Lit king size premium",
+      "features2": "Grand salon ",
+      "features3": "Terrasse panoramique",
+
+      "features4": "Cuisine équipée",
+      "features5": "Service de majordome"
+    }
+  },
+  "restaurant": {
+    "title": "Restaurant",
+    "subtitle": "Cuisine gastronomique revisitée",
+    "description": "Notre restaurant primé propose des plats de saison préparés par notre chef étoilé. Découvrez la fine gastronomie française dans un cadre élégant.",
+    "menu": "Voir le Menu",
+    "menuTitle": "Notre Carte",
+    "downloadMenu": "Télécharger",
+    "reservation": "Réserver une table",
+    "hours": {
+      "title": "Horaires d'ouverture",
+      "breakfast": "Petit-déjeuner : 7h00 - 10h30",
+      "lunch": "Déjeuner : 12h00 - 14h30",
+      "dinner": "Dîner : 19h00 - 22h30"
+    }
+  },
+  "founders": {
+    "title": "Nos Fondateurs",
+    "subtitle": "La vision derrière l'ESPACE IFEDU",
+    "founder1": {
+      "name": "Nom & prenoms",
+      "role": "Fondatrice & PDG",
+      "bio": " "
+    },
+    "founder2": {
+      "name": "Nom & prenoms",
+      "role": "Co-fondateur & Chef Exécutif",
+      "bio": " "
+    },
+    "message": "Nous avons créé l’Espace Ifèdu avec une ambition simple : offrir à chaque visiteur un lieu chaleureux, paisible et respectueux, où l’on se sent accueilli comme chez soi.\n\nVotre confiance est notre plus grande motivation. Chaque jour, nous nous engageons à améliorer nos services, à rester à l’écoute et à préserver les valeurs de qualité, de respect et d’hospitalité qui nous tiennent à cœur.\n\nMerci de faire partie de l’histoire de l’Espace Ifèdu. Nous espérons avoir l’honneur de vous accueillir et de rendre votre séjour aussi agréable que possible.",
+    "signature": "Les fondateurs – Espace Ifèdu",
+    "quote": "Notre engagement : offrir une expérience sincère où chaque détail compte."
+  },
+  "location": {
+    "title": "Notre localisation",
+    "subtitle": "Au cœur de Porto-Novo, Bénin",
+    "address": "Tokpota-Davo, Porto-Novo, Bénin",
+    "directions": "Obtenir l'itinéraire",
+    "description": "Situé à Porto-Novo, notre espace offre un accès facile aux attractions locales, aux restaurants et aux routes principales."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes là pour vous aider",
+    "phone": "Téléphone",
+    "email": "Email",
+    "address": "Adresse",
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre Email",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "send": "Envoyer le message"
+    }
+  },
+  "footer": {
+    "description": "Espace IFEDU — hébergement et restauration à Porto-Novo, Bénin, pour vos séjours, événements et moments conviviaux.",
+    "quickLinks": "Liens rapides",
+    "services": "Nos services",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Paramètres des cookies",
+    "rights": "Tous droits réservés"
+  },
+  "cookie": {
+    "title": "Préférences de cookies",
+    "message": "Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.",
+    "accept": "Accepter tout",
+    "reject": "Refuser les non-essentiels",
+    "settings": "Paramètres des cookies"
+  },
+  "testimonials": {
+    "title": "Ils nous ont fait confiance",
+    "subtitle": "Découvrez les expériences de nos clients satisfaits",
+    "averageRating": "Note moyenne",
+    "clientsServed": "Clients servis",
+    "satisfactionRate": "Taux de satisfaction",
+    "countries": "Pays représentés",
+    "trustCTA": "Rejoignez notre communauté de voyageurs heureux",
+    "joinCommunity": "Partagez votre expérience ESPACE IFEDU",
+    "shareExperience": "Partager mon avis"
+  },
+  "events": {
+    "title": "ESPACE ÉVÉNEMENTIEL",
+    "subtitle": "Transformez vos moments spéciaux en souvenirs inoubliables dans nos espaces dédiés",
+    "typesTitle": "Types d'Événements",
+    "weddings": "Mariages",
+    "weddingsDescription": "Célébrez votre union dans un cadre romantique et élégant avec notre équipe dédiée",
+    "conferences": "Conférences",
+    "conferencesDescription": "Équipements professionnels pour vos réunions d'affaires et présentations importantes",
+    "galas": "Galas",
+    "galasDescription": "Soirées d'exception dans un environnement luxueux pour vos événements prestigieux",
+    "seminars": "Séminaires",
+    "seminarsDescription": "Espaces modulables adaptés à vos sessions de formation et ateliers professionnels",
+    "capacity": "Capacité",
+    "people": "personnes",
+    "requestQuote": "Demander un devis",
+
+    "dedicatedSpace": {
+      "title": "Un Espace Dédié à Vos Événements",
+      "description": "Nos salles événementielles modulables s'adaptent à toutes vos envies. Que ce soit pour un mariage intime, une conférence professionnelle ou un gala prestigieux, nous mettons à votre disposition des espaces équipés et une équipe dévouée pour faire de votre événement une réussite.",
+      "benefit1": "Équipement technique haut de gamme",
+      "benefit2": "Service traiteur sur mesure",
+      "benefit3": "Coordination événementielle professionnelle",
+      "eventsHosted": "Événements organisés",
+
+      "image_survole": "Survolez l'image pour explorer les détails de notre salle événementielle",
+      "terrase": "Terrasse vue jardin",
+      "interrior": "Espace extérieur privatisé",
+      "principale": "Scène principale",
+      "equipment": "Équipement audio-vidéo professionnel",
+      "reception": "Espace réception",
+      "traiteur": "Service traiteur et bar premium",
+      "zoom": "Zoom interactif",
+      "mollete": "Molette = zoom"
+    },
+
+    "equipmentTitle": "Équipements & Services",
+    "equipmentSubtitle": "Tout le nécessaire pour un événement réussi",
+    "equipment": {
+      "audioVideo": "Audio-Vidéo Professionnel",
+      "audioVideoDesc": "Systèmes son et vidéo haute qualité",
+      "lighting": "Éclairage Scénique",
+      "lightingDesc": "Éclairage LED et effets spéciaux",
+      "furniture": "Mobilier Élégant",
+      "furnitureDesc": "Chaises, tables et estrades design",
+      "wifi": "WiFi Haut Débit",
+      "wifiDesc": "Connexion fibre optique garantie",
+      "decoration": "Décoration Sur Mesure",
+      "decorationDesc": "Service de décoration personnalisée",
+      "catering": "Service Traiteur",
+      "cateringDesc": "Cuisine gastronomique et cocktails"
+    },
+    "available": "Disponible",
+
+    "ctaTitle": "Planifiez Votre Événement Rêvé",
+    "ctaDescription": "Notre équipe d'experts est à votre disposition pour créer un événement sur mesure qui correspond exactement à votre vision et à votre budget.",
+    "contactNow": "Nous Contacter",
+    "customQuote": "Devis Personnalisé",
+    "securityNote": "Réservation sécurisée et flexible - Annulation gratuite jusqu'à 30 jours avant",
+
+    "modalTitle": "Contactez-nous pour votre événement",
+    "modalSubtitle": "Personnalisez votre message avant de nous contacter via WhatsApp",
+    "messageLabel": "Votre message personnalisé",
+    "messagePlaceholder": "Rédigez votre message ici...",
+    "resetMessage": "Message par défaut",
+    "tipTitle": "Astuce",
+    "tipContent": "Personnalisez votre message avec vos informations spécifiques (date, nombre de participants, type d'événement) pour une réponse plus rapide.",
+    "sendWhatsApp": "Envoyer via WhatsApp",
+    "cancel": "Annuler"
+  },
+  "services": {
+    "hotelAccommodation": "Hébergement hôtelier",
+    "restaurantBar": "Restaurant & Bar",
+    "eventReception": "Salle de réception",
+    "decorAndPlanning": "Décoration & organisation",
+    "guestHouse": "Maisons d’hôtes",
+    "technicalMusicSupport": "Support technique & musique",
+    "partyEntertainment": "Espace festif"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "intro": "La présente politique de confidentialité explique comment ESPACE IFEDU collecte, utilise et protège les données personnelles des visiteurs de son site web.",
+
+    "section1": {
+      "title": "1. Responsable du traitement",
+      "content": "Le site ESPACE IFEDU est édité par l’établissement hôtelier ESPACE IFEDU, situé à Porto-Novo, Bénin. Pour toute question, vous pouvez nous contacter via les coordonnées indiquées sur le site."
+    },
+
+    "section2": {
+      "title": "2. Données collectées",
+      "content": "Nous collectons uniquement les données strictement nécessaires, telles que les informations fournies via le formulaire de contact (nom, adresse e-mail, message), ainsi que certaines données techniques comme l’adresse IP ou le type de navigateur."
+    },
+
+    "section3": {
+      "title": "3. Utilisation des données",
+      "content": "Les données collectées sont utilisées exclusivement pour répondre aux demandes de contact, améliorer l’expérience utilisateur et assurer le bon fonctionnement du site."
+    },
+
+    "section4": {
+      "title": "4. Cookies",
+      "content": "Le site peut utiliser des cookies techniques nécessaires à son fonctionnement et, le cas échéant, des cookies de mesure d’audience. Vous pouvez gérer vos préférences via les paramètres de cookies."
+    },
+
+    "section5": {
+      "title": "5. Conservation des données",
+      "content": "Les données personnelles sont conservées uniquement pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées."
+    },
+
+    "section6": {
+      "title": "6. Droits des utilisateurs",
+      "content": "Conformément à la réglementation applicable, vous disposez d’un droit d’accès, de rectification et de suppression de vos données personnelles. Toute demande peut être adressée via les moyens de contact du site."
+    }
+  },
+  "terms": {
+    "title": "Conditions d’utilisation",
+    "intro": "Les présentes conditions d’utilisation encadrent l’accès et l’usage du site web de l’établissement ESPACE IFEDU.",
+
+    "section1": {
+      "title": "1. Objet du site",
+      "content": "Le site ESPACE IFEDU est un site vitrine ayant pour objectif de présenter les services de l’établissement hôtelier, notamment l’hébergement, la restauration et les espaces événementiels."
+    },
+
+    "section2": {
+      "title": "2. Réservations",
+      "content": "Aucune réservation ni aucun paiement ne sont effectués directement sur le site. Les demandes de réservation se font exclusivement via WhatsApp ou par contact direct avec l’établissement."
+    },
+
+    "section3": {
+      "title": "3. Responsabilité",
+      "content": "ESPACE IFEDU s’efforce de fournir des informations exactes et à jour. Toutefois, l’établissement ne saurait être tenu responsable d’erreurs, d’omissions ou d’une indisponibilité temporaire du site."
+    },
+
+    "section4": {
+      "title": "4. Propriété intellectuelle",
+      "content": "L’ensemble des contenus présents sur le site (textes, images, logos) est protégé par le droit de la propriété intellectuelle. Toute reproduction ou utilisation non autorisée est interdite."
+    },
+
+    "section5": {
+      "title": "5. Cookies et services tiers",
+      "content": "Le site peut utiliser des cookies techniques et des services tiers, notamment pour l’affichage de cartes interactives (ex. Google Maps). Ces cookies sont nécessaires au bon fonctionnement de certaines fonctionnalités."
+    },
+
+    "section6": {
+      "title": "6. Droit applicable",
+      "content": "Les présentes conditions sont régies par les lois en vigueur en République du Bénin. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire."
+    }
+  }
+}
